@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @FeignClient("cloud-server-feigin-a")
 public interface CloudFeginClient {
 
-    @GetMapping("/cloud/cloud-mode/ab")
+    @GetMapping("/cloud/cloud-mode")
     CloudMode cloudmode();
 }
