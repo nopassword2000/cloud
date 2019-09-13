@@ -1,0 +1,24 @@
+server:
+  port: 8202
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    status-page-url-path: /info
+    health-check-url-path: /health
+    appname: cloud-client-feigin-b
+spring:
+  application:
+    name: cloud-server-feigin-b-1
+
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 500
+        readTimeout: 5000
+        loggerLevel: basic

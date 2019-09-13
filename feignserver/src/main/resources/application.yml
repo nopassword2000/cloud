@@ -1,0 +1,15 @@
+server:
+  port: 8201
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    status-page-url-path: /info
+    health-check-url-path: /health
+    appname: cloud-server-feigin-a
+spring:
+  application:
+    name: cloud-server-feigin-a
